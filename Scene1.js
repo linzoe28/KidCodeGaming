@@ -7,27 +7,36 @@ class Scene1 extends Phaser.Scene {
         super();
     }
     preload() {
-        this.load.image('tiles', 'assets/tile.png');
+        // this.load.image('tiles', 'assets/tile.png');
+        this.load.image('tiles', 'assets/tileset.png');
+        this.load.image('cloud', 'assets/cloud.png');
         this.load.tilemapTiledJSON('map', 'assets/level1.json');
         this.load.spritesheet('red', 'assets/yellow_player.png', {
             frameWidth: 32,
             frameHeight: 38
         });
-        this.load.image('gem', 'assets/Square without details (outline)/40-40/monkey.png');
-        this.load.spritesheet('card', 'assets/card_test.jpg', {
-            frameWidth: 108,
-            frameHeight: 108
-        });
+        this.load.image('gem', 'assets/obj/Ruby2x.png');
+        this.load.image('trap1', 'assets/obj/Hole2x.png');
+        this.load.image('trap2', 'assets/obj/Danger_Deadly2x.png');
+        this.load.image('trap3', 'assets/obj/GardenBed_Carrots_022x.png');
+        this.load.image('trap4', 'assets/obj/GardenBed_Radish_022x.png');
     }
     create() {
         let map = this.make.tilemap({ key: "map" });
-        let tileset = map.addTilesetImage('tile', 'tiles');
-        // let gems = map.addTilesetImage('Jelly', 'gems');
-        this.platforms = map.createStaticLayer('level 1', tileset, 0, 0);
-        this.platforms.setCollisionByExclusion([89, 127, 128, 129, 140, , 141, 142], true);
-        this.gem = map.createFromObjects('gem 1', 145, { key: 'gem' });
+        let clouds_tile=map.addTilesetImage('cloud', 'cloud');
+        let tileset = map.addTilesetImage('tileset', 'tiles');
+        map.createStaticLayer('bg', tileset, 0, 0);
+        map.createStaticLayer('bg-cloud', clouds_tile, 0, -120);
+        this.platforms = map.createStaticLayer('level1', tileset, 0, 0);
+        this.platforms.setCollisionByExclusion([51, 9], true);
 
-        this.player = new Player(this, 0, 0);
+        this.gem = map.createFromObjects('obj', 55, { key: 'gem' });
+        this.trap1 = map.createFromObjects('obj', 42, { key: 'trap1' });
+        this.trap2 = map.createFromObjects('obj', 14, { key: 'trap2' });
+        this.trap3 = map.createFromObjects('obj', 23, { key: 'trap3' });
+        this.trap4 = map.createFromObjects('obj', 26, { key: 'trap4' });
+
+        this.player = new Player(this, 125, 125);
         this.physics.add.collider(this.player, this.platforms);
         this.cursors = this.input.keyboard.createCursorKeys();
 
@@ -75,7 +84,7 @@ class Scene1 extends Phaser.Scene {
 
         this.player.setVelocityX(0);
         this.player.setVelocityY(0);
-        // this. player.anims.play('turn',true);
+        
         if (this.cursors.left.isDown) {
             this.player.setVelocityX(-160);
             this.player.anims.play('left', true);
