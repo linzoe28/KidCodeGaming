@@ -183,6 +183,7 @@
         <map type="IndividualSpriteSettingsMap">
             <key type="filename">c/DOWN.png</key>
             <key type="filename">c/FOR.png</key>
+            <key type="filename">c/IFELSE.png</key>
             <key type="filename">c/LEFT.png</key>
             <key type="filename">c/RIGHT.png</key>
             <key type="filename">c/UP.png</key>
@@ -194,9 +195,9 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>93,135,185,270</rect>
+                <rect>35,48,70,95</rect>
                 <key>scale9Paddings</key>
-                <rect>93,135,185,270</rect>
+                <rect>35,48,70,95</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -205,6 +206,7 @@
         <array>
             <filename>c/DOWN.png</filename>
             <filename>c/FOR.png</filename>
+            <filename>c/IFELSE.png</filename>
             <filename>c/LEFT.png</filename>
             <filename>c/RIGHT.png</filename>
             <filename>c/UP.png</filename>

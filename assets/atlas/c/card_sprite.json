@@ -4,8 +4,8 @@
 			"image": "card_sprite.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 1860,
-				"h": 542
+				"w": 852,
+				"h": 192
 			},
 			"scale": 1,
 			"frames": [
@@ -14,20 +14,20 @@
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					},
 					"frame": {
 						"x": 1,
 						"y": 1,
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					}
 				},
 				{
@@ -35,20 +35,41 @@
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					},
 					"frame": {
-						"x": 373,
+						"x": 143,
 						"y": 1,
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
+					}
+				},
+				{
+					"filename": "IFELSE.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 140,
+						"h": 190
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 140,
+						"h": 190
+					},
+					"frame": {
+						"x": 285,
+						"y": 1,
+						"w": 140,
+						"h": 190
 					}
 				},
 				{
@@ -56,20 +77,20 @@
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					},
 					"frame": {
-						"x": 745,
+						"x": 427,
 						"y": 1,
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					}
 				},
 				{
@@ -77,20 +98,20 @@
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					},
 					"frame": {
-						"x": 1117,
+						"x": 569,
 						"y": 1,
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					}
 				},
 				{
@@ -98,20 +119,20 @@
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					},
 					"frame": {
-						"x": 1489,
+						"x": 711,
 						"y": 1,
-						"w": 370,
-						"h": 540
+						"w": 140,
+						"h": 190
 					}
 				}
 			]
@@ -120,6 +141,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:8f3444cfb257e1831f066264f351b85f:bcdae5d14d829472b2c715649b55c624:eadad01972b5fd0ec7e17126c96b207c$"
+		"smartupdate": "$TexturePacker:SmartUpdate:9f251a9809a6669bbfd3a807cd38be5f:3c7dc6776e07c730880f9e157c28319b:eadad01972b5fd0ec7e17126c96b207c$"
 	}
 }
